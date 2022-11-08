@@ -33,12 +33,14 @@ class FragmentAnimals(
         arguments?.takeIf {it.containsKey(ARG_OBJECT).apply {
             //llamamos a los elementos de cada item del view pager
             val imgId:ImageView = view.findViewById(R.id.item_animal_id_img)
+            val name:TextView = view.findViewById(R.id.item_animal_name)
             val specie:TextView = view.findViewById(R.id.item_animal_specie)
             val sex:TextView = view.findViewById(R.id.item_animal_sex)
             val habitad:TextView = view.findViewById(R.id.item_animal_habitad)
 
             //agregamos los datos segun el la posicion del arreglo
             imgId.setImageResource(animal.img_id)
+            name.text = "Nombre: "+animal.name
             specie.text = "Especie: "+animal.specie
             sex.text = "Sexo: "+animal.sex
             habitad.text ="Hábitad: "+ animal.habitad

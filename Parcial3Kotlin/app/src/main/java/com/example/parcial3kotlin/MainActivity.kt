@@ -24,9 +24,9 @@ class MainActivity : AppCompatActivity() {
         vpViewPager = findViewById(R.id.main_vp_animals)
 
         //agregamos los datos al array "animalData" que funcionara como la base de datos
-        animalData.add(Animals(R.drawable.ciervo,"Mamífero","Macho","Bosques cálidos"))
-        animalData.add(Animals(R.drawable.lobo,"Mamífero","Hembra","Bosques"))
-        animalData.add(Animals(R.drawable.llama,"Mamífero","Macho","LLanuras"))
+        animalData.add(Animals(R.drawable.ciervo,"Ciervo","Mamífero","Macho","Bosques cálidos"))
+        animalData.add(Animals(R.drawable.lobo,"Lobo","Mamífero","Macho","Bosques"))
+        animalData.add(Animals(R.drawable.llama,"Llama","Mamífero","Macho","LLanuras"))
 
 
         vpViewPager.adapter = adapterViewPager
