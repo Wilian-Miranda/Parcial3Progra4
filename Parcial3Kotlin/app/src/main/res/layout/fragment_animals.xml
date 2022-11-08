@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="50dp">
+
+    <ImageView
+        android:id="@+id/item_animal_id_img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_launcher"
+        ></ImageView>
+    <TextView
+        android:id="@+id/item_animal_specie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_animal_id_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="Especie"
+        android:textSize="12pt">
+    </TextView>
+    <TextView
+        android:id="@+id/item_animal_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_animal_specie"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Sexo"
+        android:textSize="10pt">
+    </TextView>
+    <TextView
+        android:id="@+id/item_animal_habitad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_animal_sex"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Hábitad"
+        android:textSize="10pt">
+    </TextView>
+
+</RelativeLayout>
